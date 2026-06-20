@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('food')">Food</button>
+    <button onclick="filterImages('water')">Water</button>
+    <button onclick="filterImages('furniture')">Furniture</button>
+    <button onclick="filterImages('notes')">Notes</button>
+    <button onclick="filterImages('coding')">Coding</button>
+</div>
+
+<div class="gallery">
+
+    <!-- Nature -->
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600" alt="Nature">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Nature">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600" alt="Nature">
+    </div>
+
+    <!-- Food -->
+    <div class="gallery-item food">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Food">
+    </div>
+
+    <div class="gallery-item food">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="Food">
+    </div>
+
+    <div class="gallery-item food">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Food">
+    </div>
+
+    <!-- Water -->
+    <div class="gallery-item water">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Water">
+    </div>
+
+    <div class="gallery-item water">
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600" alt="Water">
+    </div>
+
+    <div class="gallery-item water">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600" alt="Water">
+    </div>
+
+    <!-- Furniture -->
+    <div class="gallery-item furniture">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600" alt="Furniture">
+    </div>
+
+    <div class="gallery-item furniture">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600" alt="Furniture">
+    </div>
+
+    <div class="gallery-item furniture">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=600" alt="Furniture">
+    </div>
+
+    <!-- Notes -->
+    <div class="gallery-item notes">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600" alt="Notes">
+    </div>
+
+    <div class="gallery-item notes">
+        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=600" alt="Notes">
+    </div>
+
+    <div class="gallery-item notes">
+        <img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?w=600" alt="Notes">
+    </div>
+
+    <!-- Cartoons -->
+    <div class="gallery-item coding">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600" alt="Cartoon Art">
+    </div>
+
+    <div class="gallery-item coding">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600" alt="Cartoon Art">
+    </div>
+
+    <div class="gallery-item coding">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="Cartoon Art">
+    </div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="prev">&#10094;</button>
+
+    <img class="lightbox-img" src="" alt="">
+
+    <button class="next">&#10095;</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
